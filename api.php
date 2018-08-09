@@ -74,24 +74,4 @@
 	    	}
 	    }
 	}
-
-
-	if (!empty($_GET['id'])){
-		$id = "c54c1418-d07e-4a5e-a477-0f6d1a03df61";
-		$secret = "z_cjf_H1PyDykcqgdHbwwQ";
-		$test = new APIClient($id, $secret);
-		echo $test->getItem($_GET['id']); 
-	}
-	if(!empty($_POST['id'])){
-		$id = $_POST['id'];
-		$secret = $_POST['secret'];
-		$test2 = new APIClient($id, $secret);
-		echo $test2->getJWTToken(); 
-	}
-	if(!empty($_POST['name'])){
-		$id = "c54c1418-d07e-4a5e-a477-0f6d1a03df61";
-		$secret = "z_cjf_H1PyDykcqgdHbwwQ";
-		$test = new APIClient($id, $secret);
-		echo $test->addItem($_POST); 
-	}
  ?>
